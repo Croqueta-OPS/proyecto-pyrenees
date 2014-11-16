@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+    
+        <meta charset="utf-8">
+        <title>Pyrenoise-rutas</title>
+        
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/rutas.css">
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTcGmuWEwzwZXpcYRMguIQoWAc7yrw6Kc&sensor=false"></script>
+
+        <script src="js/googleMap.js" type="text/javascript"></script>
+        <script src="js/rutas.js" type="text/javascript"></script>
+    
+    </head>
+    
+    <body>
+    	<!-- Añadir un filtro negro a la imagen de fondo -->
+        <!--<img class="fondoNegro" src="../img/fondo_negro.png" />-->
+    	
+    	<!-- menú -->
+        <div class="navegador">
+        	
+			<label for="show-menu" class="show-menu">Show Menu</label>
+			<input type="checkbox" id="show-menu" role="button">
+			
+			<ul id="menu">
+				
+				<li><a href="home.html">Home</a></li>
+				<li><a href="#">Rutas</a></li>
+				
+				<li class="visible">
+					<a href="#">Alojamiento ￬</a>
+					
+					<ul class="hidden">
+						
+						<li><a href="#">Camping</a></li>
+						<li><a href="#">Refugio</a></li>
+						
+					</ul>
+					
+				</li>
+				<!-- estos botones solo aparecen cuando se hace responsive -->
+				<li class="escondido"><a href="#">Camping</a></li>
+				<li class="escondido"><a href="#">Refugio</a></li>
+				
+			</ul>
+			
+		</div>
+        
+        <div class="mainContent">
+        
+            <div id="googleMap">
+            
+            </div>
+            
+            <nav id="navRutas">
+				<ul>						
+					<li><a href="#" class="botonRuta" id="btn1"><img src="img/ruta1.jpg" /></a></li>
+					<li><a href="#" class="botonRuta" id="btn2"><img src="img/ruta2.jpg" /></a></li>
+					<li><a href="#" class="botonRuta" id="btn3"><img src="img/ruta3.jpg" /></a></li>
+				</ul>				
+			</nav>
+			
+			<div id="ruta">
+				
+			</div>
+        
+        </div>
+    
+    </body>
+
+</html>
