@@ -51,12 +51,13 @@ body {
     margin-left: 5%;
 }
 
-.leftContainer {
+.rightContainer {
     margin-top: 4%;
     width: 35%;
     float: left;
     margin-left: 2.5%;
     height: 400px;
+    text-align: center;
 }
 
 .datosContacto {
@@ -68,10 +69,11 @@ body {
     font-size: 70%;
 }
 
-.rightContainer {
+.leftContainer {
     width: 50%;
     float: right;
     margin-right: 1%;
+    margin-top: 5%;
     height: 400px;
     text-align: center;
 }
@@ -91,13 +93,18 @@ body {
     display: none;
 }
 
-.calendario p {
+.logoAlbergue {
+}
+
+.logoAlbergue p {
     margin-left: 10%;
 }
 
-.calendario img {
+.logoAlbergue img {
     margin-left: 12%;
-    width: 60%;
+    width: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .separator {
@@ -108,7 +115,7 @@ body {
     margin-top: 5%;
 }
 
-.rightContainer p {
+.leftContainer p {
     width: 70%;
     margin-left: 15%;
     margin-top: 5%;
@@ -118,9 +125,16 @@ body {
     font-size: 160%;
 }
 
-.caracteristicas {
-    margin-top: 10%;
+.about{
     display: none;
+}
+
+.caracteristicas {
+    display: none;
+}
+
+.albergueCaracteristicas {
+    margin-top: 25%;
 }
 
 .lista {
@@ -131,14 +145,19 @@ body {
     margin-left: 9%;
 }
 
-.imagenes {
+.albergueImagenes {
     margin-top: 8%;
-    width: 90%;
-    margin-left: 6%;
+    width: 130%;
+    margin-right: 6%;
+    margin-left: -5%;
 }
 
-.imagenes img {
+.albergueImagenes img {
     max-height: 100px;
+}
+
+.imagenes{
+    display: none;
 }
 
 .lightbox {
