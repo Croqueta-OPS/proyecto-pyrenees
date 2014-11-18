@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-	<head>
+	<head id="head">
 		<meta charset="utf-8">
 		<title>Pyrenoise</title>
 	    <link rel="stylesheet" href="css/index.css">
@@ -9,7 +9,7 @@
 	    <link rel="stylesheet" href="css/menu.css">
 
 		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
-
+		
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 		</head>
 		<body>
@@ -18,25 +18,22 @@
 			<label for="show-menu" class="show-menu">Menú</label>
 			<input type="checkbox" id="show-menu" role="button">
 			<ul id="menu">
-				<li>
-					<a href="#">Home</a></li>
-				<li>
-					<a href="rutas.html">Rutas</a>
-				</li>
-				<li class="visible">
-					<a href="#">Alojamiento ￬</a>
-					<ul class="hidden">
-						<li><a href="#">Camping</a></li>
-						<li><a href="#">Refugio</a></li>
-					</ul>
-				</li>
-				<li class="escondido">
-					<a href="#">Camping</a>
-				</li>
-				<li class="escondido">
-					<a href="#">Refugio</a>
-				</li>
-				<!--<li><a href="#">About</a></li>-->
+				<li><a href="home.html">Home</a></li>
+    				<li><a href="rutas.html">Rutas</a></li>
+    				
+    				<li class="visible">
+    				    
+    					<a href="#">Alojamiento ￬</a>
+    					
+    					<ul class="hidden">
+    						<li><a href="alojamiento.html?id=camping">Camping</a></li>
+    						<li><a href="alojamiento.html?id=refugio">Refugio</a></li>
+    					</ul>
+    					
+    				</li>
+    				
+    				<li class="escondido"><a href="alojamiento.html">Camping</a></li>
+    				<li class="escondido"><a href="alojamiento.html" onClick ="elegirCSS(false);">Refugio</a></li>
 			</ul>
 		</div>
 		<div class="logo"><img src="img/logo-pirineos.png"></img></div>

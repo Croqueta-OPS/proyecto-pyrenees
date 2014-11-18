@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
+    <head id="head">
     
         <meta charset="utf-8">
         <title>Pyrenoise-rutas</title>
@@ -28,7 +28,7 @@
         	
 			<label for="show-menu" class="show-menu">Show Menu</label>
 			<input type="checkbox" id="show-menu" role="button">
-			
+			<div class="logo"><img src="/img/logo-pirineos2.png"/></div>
 			<ul id="menu">
 				
 				<li><a href="home.html">Home</a></li>
@@ -41,7 +41,7 @@
 						
 						<li><a href="#">Camping</a></li>
 						<li><a href="#">Refugio</a></li>
-						
+				
 					</ul>
 					
 				</li>
@@ -52,14 +52,23 @@
 			</ul>
 			
 		</div>
-        
+		<div class="titulo"><h1>Disfruta de la mejor selección de rutas</h1></div>
+        <div class="nav-pirineos">
+        	<ul>
+        		<li><a href="#">Pirineos Atlánticos</a></li>
+        		<li><a href="#">Pirineo Aragones</a></li>
+        		<li><a href="#">Pirineo Vasco</a></li>
+        		<li><a href="#">Pirineos Occidentales</a></li>
+        		<li><a href="#">Andorra</a></li>
+        	</ul>
+        </div>
         <div class="mainContent">
         
             <div id="googleMap">
             
             </div>
             
-            <nav id="navRutas">
+            <!--<nav id="navRutas">
 				<ul>						
 					<li><a href="#" class="botonRuta" id="btn1"><img src="img/ruta1.jpg" /></a></li>
 					<li><a href="#" class="botonRuta" id="btn2"><img src="img/ruta2.jpg" /></a></li>
@@ -69,10 +78,34 @@
 			
 			<div id="ruta">
 				
-			</div>
+			</div>-->
         
         </div>
-    
+        <div class="rutas">
+            <div class="flecha"><img src="img/ico1.png"/></div>
+            <article>
+				<a href="#" class="botonRuta" id="btn1"><img src="img/ruta1.jpg" /></a>
+				<header><h1>Midi d'Ossau</h1></header>
+				<h2>El Midi d'Ossau es una zona preciosa de la parte occidental...</h2>
+				<hr/>
+				<footer><p>Dificultad</p></footer>
+            </article>
+            <article>
+				<a href="#" class="botonRuta" id="btn2"><img src="img/ruta2.jpg" /></a>
+				<header><h1>Valle de Aspe</h1></header>
+				<h2>Precioso paraje natural donde podremos disfrutar de una ruta...</h2>
+				<hr/>
+            	<footer><p>Dificultad</p></footer>
+            </article>
+            <article>
+				<a href="#" class="botonRuta" id="btn3"><img src="img/ruta3.jpg" /></a>
+				<header><h1>Valle de Ossau</h1></header>
+				<h2>Una de las más famosas zonas en los pirineos...</h2>
+				<hr/>
+            	<footer><p>Dificultad</p></footer>
+            </article>
+            <div class="flecha"><img src="img/ico2.png"/></div>
+            </div>
     </body>
 
 </html>

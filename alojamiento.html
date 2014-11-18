@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 
-	<head>
+	<head id="head">
 		<meta charset="utf-8">
 		<title>Pyrenoise - Alojamiento</title>
 		
 	    <link rel="stylesheet" href="css/menu.css">
-        <link rel="stylesheet" href="css/camping.css">
+        
+        <script type="text/javascript">
+       
+        	var css;
+        	
+	        if (document.URL.charAt(50) == 'c') {
+	        	css = "css/camping.css";
+	        }
+	        else {
+	        	css = "css/refugio.css";
+	        }
+	        
+	        var link = document.createElement("link");
+			link.href = css;
+			link.type = "text/css";
+			link.rel = "stylesheet";
+			document.getElementsByTagName("head")[0].appendChild(link);
+	       
+		</script>
+        
 	    
 	    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans' rel='stylesheet' type='text/css'>
 
@@ -25,7 +44,7 @@
     			
     			<ul id="menu">
     			    
-    				<li><a href="#">Home</a></li>
+    				<li><a href="home.html">Home</a></li>
     				<li><a href="rutas.html">Rutas</a></li>
     				
     				<li class="visible">
@@ -33,14 +52,14 @@
     					<a href="#">Alojamiento ￬</a>
     					
     					<ul class="hidden">
-    						<li><a href="#">Camping</a></li>
-    						<li><a href="#">Refugio</a></li>
+    						<li><a href="alojamiento.html">Camping</a></li>
+    						<li><a href="alojamiento.html">Refugio</a></li>
     					</ul>
     					
     				</li>
     				
-    				<li class="escondido"><a href="#">Camping</a></li>
-    				<li class="escondido"><a href="#">Refugio</a></li>
+    				<li class="escondido"><a href="alojamiento.html">Camping</a></li>
+    				<li class="escondido"><a href="alojamiento.html">Refugio</a></li>
     				
     			</ul>
     			
@@ -63,16 +82,73 @@
     		    </div>
     		    
     		    <div class="calendario">
-    		        <img src="../img/google-calendar-february.png" />
+    		    	
+    		    	<p>Disponibilidad</p>
+    		        <img src="../img/calendario.png" />
+    		        
+    		    </div>
+    		    
+    		    <div class="datosContacto">
+    		    	
+    		    	<p>Dirección: Calle del Ladrón 23</p>
+    		    	<p>Teléfono: 123456789</p>
+    		    	<p>Email: wendel.mandanga@gmail.com</p>
+    		    	
     		    </div>
     		    
     		</div>
     		
+    		<div class="separator">
+    			
+    		</div>
+    		
     		<div class="rightContainer">
+    			
+    			<div class="about">
+    				
+	    			<p class="titulo">Camping Peio</p>
+	    			<p>Situados en un íntimo rincón del Pirineo Aragonés y rodeados de unas vistas 
+	    			inmejorables, contamos con un clima soleado durante gran parte del año.</p>
+	    			
+    		    </div>
+    		    
+    		    <div class="caracteristicas">
+    		    	
+    		    	<p class="titulo">Características</p>
+    		    	
+    		    	<ul class="lista">
+    		    		
+    		    		<li>· Oferta variada de bungalows</li>
+    		    		<li>· 150 parcelas para tiendas</li>
+    		    		<li>· Aseos comunes</li>
+    		    		<li>· Piscina con socorrista</li>
+    		    		<li>· Alquiler de bicicletas</li>
+    		    		
+    		    	</ul>
+    		    	
+    		    </div>
+    		    
+    		    <div class="imagenes">
+    		    	
+					<a href="#img1"><img src="img/camping1.jpg"></a>
+					<a href="#img2"><img src="img/camping2.png"></a>
+					<a href="#img3"><img src="img/camping3.jpg"></a>
+					
+					<a href="#_" class="lightbox" id="img1"><img src="img/camping1.jpg"></a>
+					<a href="#_" class="lightbox" id="img2"><img src="img/camping2.png"></a>
+					<a href="#_" class="lightbox" id="img3"><img src="img/camping3.jpg"></a>
+    		    	
+    		    </div>
     		    
     		</div>
     		
 		</div>
+		
+		<footer class="footer">
+			
+			
+			
+		</footer>
 		
 	</body>
 	

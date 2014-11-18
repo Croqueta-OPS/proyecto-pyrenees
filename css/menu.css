@@ -18,17 +18,17 @@
 	width: 100%;
 }
 
-.escondido{
-    display:none;
-}
-
 /*Crea una lista horizontal con el margen*/
-li {
+.navegador li {
 	display:inline-block;
 }
 
+.navegador .escondido{
+    display:none;
+}
+
 /*Estilos para los enlaces del menú*/
-li a {
+.navegador li a {
 	display:block;
 	min-width:120px;
 	height: 40px;
@@ -36,50 +36,50 @@ li a {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 15px;
 	font-weight: 400;
-	color: #140A00;
+	color: #001400;
 	text-decoration: none;
 	-webkit-transition: all 0.2s ease-in-out 0s;
 	transition: all 0.2s ease-in-out 0s;
 }
 
 /*Estilo Hover para los enlaces principales*/
-li:hover a {
-	color: #FFFFD1;
+.navegador li:hover a {
+	color: #4D944D;
 }
 
 /*Estilo hover para los botones secundarios*/
-li:hover ul a {
+.navegador li:hover ul a {
 	color: #fff;
 	height: 30px;
 	line-height: 30px;
 }
 
 /*Hover para los enlaces secundarios*/
-li:hover ul a:hover {
-	color: #FFFFD1;
+.navegador li:hover ul a:hover {
+	color: #001400;
 }
 
 /*Esconder los botones secundarios*/
-li ul {
+.navegador li ul {
    display: none;
 }
 
 /*Hacer los botones extensibles que se muestren en vertical*/
-li ul li {
+.navegador li ul li {
     width: 10%;
 	display: block;
 	float: none;
 }
 
 /*Evitar que el texto se monte*/
-li ul li a {
+.navegador li ul li a {
 	width: auto;
 	min-width: 80px;
 	padding: 0 20px;
 }
 
 /*Mostrar los enlaces extensibles*/
-ul li a:hover + .hidden, .hidden:hover {
+.navegador ul li a:hover + .hidden, .hidden:hover {
 	display: block;
 }
 

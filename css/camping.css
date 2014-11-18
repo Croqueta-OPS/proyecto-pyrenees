@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background-image: url('../img/refugio.jpg');
+    background-image: url('../img/camping.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -20,8 +20,22 @@ body {
     margin-top: 1%;
 }
 
-.navegador a {
-    color: #CCCCCC;
+#menu a {
+    display:block;
+	min-width:120px;
+	height: 40px;
+	line-height: 50px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #CCCCCC;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+#menu a:hover {
+    color: #4D944D;
 }
 
 .fondoNegro {
@@ -33,23 +47,33 @@ body {
 
 .container {
     position: relative;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .leftContainer {
-    margin-top: 2%;
+    margin-top: 1%;
     width: 35%;
     float: left;
     margin-left: 2.5%;
     height: 400px;
 }
 
+.datosContacto {
+    margin-left: 10%;
+    text-align: center;
+}
+
+.datosContacto p {
+    font-size: 70%;
+}
+
 .rightContainer {
-    margin-top: 2%;
     width: 50%;
     float: right;
-    margin-right: 5%;
+    margin-right: 1%;
     height: 400px;
-    border: 1px solid white;
+    text-align: center;
 }
 
 .redesSociales {
@@ -64,13 +88,90 @@ body {
 }
 
 .calendario {
-    margin-top: 10%;
+    margin-top: 12%;
+    font-size: 140%;
+    text-align: center;
+}
+
+.calendario p {
+    margin-left: 10%;
 }
 
 .calendario img {
-    margin-left: 3%;
-    width: 100%;
+    margin-left: 12%;
+    width: 60%;
 }
+
+.separator {
+    position: absolute;
+    border: 1px solid #CCCCCC;
+    height: 400px;
+    margin-left: 47%;
+    margin-top: 5%;
+}
+
+.rightContainer p {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.titulo {
+    font-size: 160%;
+}
+
+.caracteristicas {
+    margin-top: 10%;
+}
+
+.lista {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: left;
+    margin-left: 9%;
+}
+
+.imagenes {
+    margin-top: 8%;
+    width: 90%;
+    margin-left: 6%;
+}
+
+.imagenes img {
+    max-height: 100px;
+}
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 5%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
 
 
 
