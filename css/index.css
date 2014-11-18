@@ -1,13 +1,15 @@
 *{
 	margin:0;
-
+    list-style: none;
 }
+
 .logo{
     width: 100%;
     z-index:999;
     position: relative;
     margin: 0;
 }
+
 .logo img {
     width: 12%;
     display:block;
