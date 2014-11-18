@@ -6,12 +6,13 @@
 		<title>Pyrenoise - Alojamiento</title>
 		
 	    <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/footer.css">
         
         <script type="text/javascript">
        
         	var css;
         	
-	        if (document.URL.charAt(50) == 'c') {
+	        if (document.URL.charAt(document.URL.indexOf('?') + 4) == 'c') {
 	        	css = "css/camping.css";
 	        }
 	        else {
@@ -52,14 +53,14 @@
     					<a href="#">Alojamiento ￬</a>
     					
     					<ul class="hidden">
-    						<li><a href="alojamiento.html">Camping</a></li>
-    						<li><a href="alojamiento.html">Refugio</a></li>
+    						<li><a href="alojamiento.html?id=camping">Camping</a></li>
+    						<li><a href="alojamiento.html?id=refugio">Refugio</a></li>
     					</ul>
     					
     				</li>
     				
-    				<li class="escondido"><a href="alojamiento.html">Camping</a></li>
-    				<li class="escondido"><a href="alojamiento.html">Refugio</a></li>
+    				<li class="escondido"><a href="alojamiento.html?id=camping">Camping</a></li>
+    				<li class="escondido"><a href="alojamiento.html?id=refugio">Refugio</a></li>
     				
     			</ul>
     			
@@ -148,9 +149,9 @@
 
                 <div class="albergueAbout">
                         
-                        <p class="titulo">Albergue Koxme</p>
-                        <p>Situados en un íntimo rincón del Pirineo Aragonés y rodeados de unas vistas 
-                        inmejorables, contamos con un clima soleado durante gran parte del año.</p>
+                    <p class="titulo">Albergue Koxme</p>
+                    <p>Situados en un íntimo rincón del Pirineo Aragonés y rodeados de unas vistas 
+                    inmejorables, contamos con un clima soleado durante gran parte del año.</p>
                         
                 </div>
 
@@ -190,7 +191,7 @@
 		
 		<footer class="footer">
 			
-			
+		  <p>Copyright &copy; 2014</p>
 			
 		</footer>
 		

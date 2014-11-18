@@ -68,6 +68,10 @@ body {
     font-size: 70%;
 }
 
+.logoAlbergue {
+    display: none;
+}
+
 .rightContainer {
     width: 50%;
     float: right;
@@ -132,6 +136,18 @@ body {
     margin-left: 9%;
 }
 
+.albergueAbout {
+    display: none;
+}
+
+.albergueCaracteristicas {
+    display: none;
+}
+
+.albergueImagenes {
+    display: none;
+}
+
 .imagenes {
     margin-top: 8%;
     width: 90%;
@@ -172,7 +188,11 @@ body {
 	display: block;
 }
 
-
+.footer {
+    margin-top: 41%;
+    margin-left: -6%;
+    width: 111.5%;
+}
 
 
 @media screen and (max-width : 600px){

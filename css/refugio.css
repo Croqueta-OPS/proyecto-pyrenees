@@ -52,7 +52,7 @@ body {
 }
 
 .rightContainer {
-    margin-top: 4%;
+    margin-top: 1%;
     width: 35%;
     float: left;
     margin-left: 2.5%;
@@ -73,7 +73,7 @@ body {
     width: 50%;
     float: right;
     margin-right: 1%;
-    margin-top: 5%;
+    margin-top: 2%;
     height: 400px;
     text-align: center;
 }
@@ -111,7 +111,7 @@ body {
     position: absolute;
     border: 1px solid #CCCCCC;
     height: 400px;
-    margin-left: 47%;
+    margin-left: 50%;
     margin-top: 5%;
 }
 
@@ -134,7 +134,7 @@ body {
 }
 
 .albergueCaracteristicas {
-    margin-top: 25%;
+    margin-top: 13%;
 }
 
 .lista {
@@ -145,11 +145,15 @@ body {
     margin-left: 9%;
 }
 
+.albergueAbout {
+    margin-left: 5%
+}
+
 .albergueImagenes {
     margin-top: 8%;
     width: 130%;
     margin-right: 6%;
-    margin-left: -5%;
+    margin-left: -7%;
 }
 
 .albergueImagenes img {
@@ -190,8 +194,11 @@ body {
 	display: block;
 }
 
-
-
+.footer {
+    margin-top: 41%;
+    margin-left: -6%;
+    width: 111.5%;
+}
 
 @media screen and (max-width : 600px){
 
