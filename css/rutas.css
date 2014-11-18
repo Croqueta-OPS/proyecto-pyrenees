@@ -30,7 +30,7 @@ body {
 }
 
 .flex-container {
-  width: 40%;
+  width: 60%;
   padding: 0;
   margin: 0 auto;
   list-style: none;
@@ -47,26 +47,26 @@ body {
 }
 
 .flex-item {
-  background: tomato;
-  width: 80px;
-  height: 80px;
-  margin-top: 10px;
+  width: 100px;
+  height: 20px;
+  margin-top: 5px;
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
   font-weight: bold;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
+  border: 1px solid white;
 }
 
 /*Estilos para los enlaces del menú*/
 .flex-item a {
-    margin-top: 30%;
     color: white;
 	display:block;
 	text-decoration: none;
 	-webkit-transition: all 0.2s ease-in-out 0s;
 	transition: all 0.2s ease-in-out 0s;
+    text-shadow: 1px 1px 1px #999;
 }
 
 /*Estilo Hover para los enlaces principales*/
@@ -80,7 +80,7 @@ body {
     /*position: absolute;*/
     height: 400px;
     width: 70%;
-    margin: 2% 15% 0 15%;
+    margin: 1% 15% 0 15%;
     padding: 0;
     opacity: 1;
 }
@@ -101,7 +101,7 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; /* or inline-flex */
-    flex-direction: row;
+    flex-direction: row wrap;
     flex-wrap: wrap;
     justify-content:space-around;
     align-items: center;
@@ -110,8 +110,10 @@ body {
 }
 
 article {
+    min-width: 60%;
     background-color: #EBEBE0;
     width: 25%;
+    margin-bottom: 5%;
 }
 article h1{
     height: 10px;
@@ -132,7 +134,7 @@ article h2{
 	font-size: 14px;
 	font-weight: 400;
 	color: #778899;
-	margin:0 5% 0 5%;
+	margin:8% 5% 0 5%;
 }
 
 article p{
@@ -140,7 +142,7 @@ article p{
 	font-size: 12px;
 	font-weight: 400;
 	color: #999;
-	margin:0 5% 0 5%;
+	margin: 0 5% 0 5%;
 }
 .titulo h1{
     font-family: 'Roboto Condensed', sans-serif;
@@ -150,10 +152,11 @@ article p{
 	height: 20px;
 	margin-bottom: 3%;
 	margin-top:0;
-    text-shadow: 2px 2px 2px #999
+    text-shadow: 1px 1px 1px #999
 }
 
 .titulo{
+    text-align: center;
     width: 70%;
     margin: 0 15% 0 15%;
 }
@@ -164,4 +167,46 @@ article p{
 
 .flecha img{
     width:70%;
+}
+.logo2{
+    display: none;
+}
+
+@media screen and (max-width : 600px){
+
+    .flecha{
+        display: none;
+    }
+    .titulo{
+        display: none;
+    }
+    .logo{
+        display:none;
+    }
+    .logo2{
+        display:block;
+        width: 100%;
+    }
+    .logo2 img{
+        margin: 0 30% 5% 30%;
+    }
+
+    #googleMap {
+        /*position: absolute;*/
+        height: 400px;
+        width: 70%;
+        margin: 5% 15% 0 15%;
+        padding: 0;
+        opacity: 1;
+    }
+
+    html{
+        height: 100%;
+        background: url(../img/mountain1.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
 }

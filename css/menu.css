@@ -107,9 +107,6 @@ input[type=checkbox]:checked ~ #menu{
 
 /*Estilos para que el menú sea Responsive*/
 @media screen and (max-width : 600px){
-    body{
-    	background-image: url(../img/mountain1.jpg);
-    }
     
     .navegador {
     	width: 100%;
@@ -156,4 +153,6 @@ input[type=checkbox]:checked ~ #menu{
     .visible{
         display:none;
     }
+
+
 }
