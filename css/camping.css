@@ -68,6 +68,10 @@ body {
     font-size: 70%;
 }
 
+.logoAlbergue {
+    display: none;
+}
+
 .rightContainer {
     width: 50%;
     float: right;
@@ -130,6 +134,18 @@ body {
     -moz-columns: 2;
     text-align: left;
     margin-left: 9%;
+}
+
+.albergueAbout {
+    display: none;
+}
+
+.albergueCaracteristicas {
+    display: none;
+}
+
+.albergueImagenes {
+    display: none;
 }
 
 .imagenes {
