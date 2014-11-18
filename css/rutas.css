@@ -110,7 +110,7 @@ body {
 }
 
 article {
-    min-width: 60%;
+    min-width: 20%;
     background-color: #EBEBE0;
     width: 25%;
     margin-bottom: 5%;
@@ -174,9 +174,6 @@ article p{
 
 @media screen and (max-width : 600px){
 
-    .flecha{
-        display: none;
-    }
     .titulo{
         display: none;
     }
@@ -195,11 +192,13 @@ article p{
         /*position: absolute;*/
         height: 400px;
         width: 70%;
-        margin: 5% 15% 0 15%;
+        margin: 5% 15% 5% 15%;
         padding: 0;
         opacity: 1;
     }
-
+    article {
+        min-width: 60%;
+    }
     html{
         height: 100%;
         background: url(../img/mountain1.jpg) no-repeat center center fixed; 
@@ -207,6 +206,15 @@ article p{
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    }
+
+    .flecha{
+        width: 15%;
+        margin: 0 1% 0 1%;
+    }
+
+    #art2, #art3{
+        display:none;
     }
 
 }
