@@ -108,6 +108,8 @@ input[type=checkbox]:checked ~ #menu{
 /*Estilos para que el menú sea Responsive*/
 @media screen and (max-width : 600px){
     
+ 
+
     .navegador {
     	width: 100%;
     	margin-left: 0;
