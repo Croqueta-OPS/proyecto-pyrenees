@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -13,10 +17,11 @@ body {
 }
 
 .navegador {
-    margin-top: 0;
+    margin-top: -1%;
+    margin-left: -0.7%;
 }
 
-.navegador ul {
+#menu {
     margin-top: 1%;
 }
 
@@ -38,6 +43,15 @@ body {
     color: #4D944D;
 }
 
+#refugio {
+    margin-top: -80%;
+}
+
+.navegador li ul {
+    margin-top: -1%;
+    margin-left: -1.8%;
+}
+
 .fondoNegro {
     position: absolute;
     -webkit-filter: opacity(0.7);
@@ -52,7 +66,7 @@ body {
 }
 
 .leftContainer {
-    margin-top: 1%;
+    margin-top: 4%;
     width: 35%;
     float: left;
     margin-left: 2.5%;
@@ -149,7 +163,7 @@ body {
 }
 
 .imagenes {
-    margin-top: 8%;
+    margin-top: 7%;
     width: 90%;
     margin-left: 6%;
 }
@@ -189,7 +203,7 @@ body {
 }
 
 .footer {
-    margin-top: 41%;
+    margin-top: 41.9%;
     margin-left: -6%;
     width: 111.5%;
 }

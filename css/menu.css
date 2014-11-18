@@ -49,14 +49,14 @@
 
 /*Estilo hover para los botones secundarios*/
 .navegador li:hover ul a {
-	color: #fff;
+	color: #001400;
 	height: 30px;
 	line-height: 30px;
 }
 
 /*Hover para los enlaces secundarios*/
 .navegador li:hover ul a:hover {
-	color: #001400;
+	color: #4D944D;
 }
 
 /*Esconder los botones secundarios*/
