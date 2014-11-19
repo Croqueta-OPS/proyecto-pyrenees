@@ -1,3 +1,7 @@
+/******************************/
+/* CSS que controla las Fonts */
+/******************************/
+
 @font-face {
     font-family: 'BebasNeueRegular';
     src: url('fonts/BebasNeue-webfont.eot');
@@ -9,7 +13,7 @@
     font-style: normal;
 }
 
-/* General Demo Style */
+/*
 body{
     background-image: url(dos_montaneros.jpg);
     background-repeat: no-repeat;
@@ -18,3 +22,4 @@ body{
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
+*/

@@ -1,3 +1,7 @@
+/**********/
+/* Global */
+/**********/
+
 * {
     margin: 0;
 }
@@ -19,6 +23,44 @@ body {
 .navegador {
     margin-top: -1%;
     margin-left: -0.7%;
+}
+
+.titulo {
+    font-size: 160%;
+}
+
+.lista {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: left;
+    margin-left: 9%;
+}
+
+/********/
+/* Body */
+/********/
+
+.fondoNegro {
+    position: absolute;
+    -webkit-filter: opacity(0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+}
+
+/******************/
+/* Menu Navegador */
+/******************/
+
+.navegador li ul {
+    margin-top: -1%;
+    margin-left: -1.8%;
 }
 
 #menu {
@@ -47,23 +89,17 @@ body {
     margin-top: -80%;
 }
 
-.navegador li ul {
-    margin-top: -1%;
-    margin-left: -1.8%;
-}
-
-.fondoNegro {
+.logo{
     position: absolute;
-    -webkit-filter: opacity(0.7);
-    width: 100%;
-    height: 100%;
+    margin-top: 2.05%;
+    width: 20%;
+    margin-left: 11.6%;
+    float: left;
 }
 
-.container {
-    position: relative;
-    width: 90%;
-    margin-left: 5%;
-}
+/************************/
+/* Contenedor Izquierda */
+/************************/
 
 .leftContainer {
     margin-top: 4%;
@@ -71,27 +107,6 @@ body {
     float: left;
     margin-left: 2.5%;
     height: 400px;
-}
-
-.datosContacto {
-    margin-left: 10%;
-    text-align: center;
-}
-
-.datosContacto p {
-    font-size: 70%;
-}
-
-.logoAlbergue {
-    display: none;
-}
-
-.rightContainer {
-    width: 50%;
-    float: right;
-    margin-right: 1%;
-    height: 400px;
-    text-align: center;
 }
 
 .redesSociales {
@@ -120,6 +135,23 @@ body {
     width: 60%;
 }
 
+.logoAlbergue {
+    display: none;
+}
+
+.datosContacto {
+    margin-left: 10%;
+    text-align: center;
+}
+
+.datosContacto p {
+    font-size: 70%;
+}
+
+/**********/
+/* Centro */
+/**********/
+
 .separator {
     position: absolute;
     border: 1px solid #CCCCCC;
@@ -128,37 +160,33 @@ body {
     margin-top: 5%;
 }
 
+/**********************/
+/* Contenedor Derecha */
+/**********************/
+
+.rightContainer {
+    width: 50%;
+    float: right;
+    margin-right: 1%;
+    height: 400px;
+    text-align: center;
+}
+
 .rightContainer p {
     width: 70%;
     margin-left: 15%;
     margin-top: 5%;
 }
 
-.titulo {
-    font-size: 160%;
+.albergueAbout {
+    display: none;
 }
 
 .caracteristicas {
     margin-top: 10%;
 }
 
-.lista {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    text-align: left;
-    margin-left: 9%;
-}
-
-.albergueAbout {
-    display: none;
-}
-
 .albergueCaracteristicas {
-    display: none;
-}
-
-.albergueImagenes {
     display: none;
 }
 
@@ -171,6 +199,14 @@ body {
 .imagenes img {
     max-height: 100px;
 }
+
+.albergueImagenes {
+    display: none;
+}
+
+/***********************/
+/* Control de Imagenes */
+/***********************/
 
 .lightbox {
 	/** Default lightbox to hidden */
@@ -202,17 +238,19 @@ body {
 	display: block;
 }
 
+/*****************/
+/* Pie de Pagina */
+/*****************/
+
 .footer {
-    margin-top: 41.9%;
+    margin-top: 44.3%;
     margin-left: -6%;
     width: 111.5%;
 }
 
+/**************/
+/* Responsive */
+/**************/
 
 @media screen and (max-width : 600px){
-
-    
-    
-    
-    
 }

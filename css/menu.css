@@ -1,4 +1,8 @@
-/*Aquí comienzan los estilos del navegador--------------------*/
+/****************************/
+/* CSS que controla el Menú */
+/****************************/
+
+/* Aquí comienzan los estilos del navegador */
 .navegador{
     width: 100%;
     height: 100px;
@@ -6,7 +10,7 @@
 	position: relative;
 }
 
-/*Strip the ul of padding and list styling*/
+/* Quita el padding y el list-style al ul */
 .navegador ul {
 	list-style-type:none;
 	padding:0;
@@ -18,17 +22,17 @@
 	width: 100%;
 }
 
-/*Crea una lista horizontal con el margen*/
-.navegador li {
-	display:inline-block;
-}
-
-.navegador .escondido{
+.escondido{
     display:none;
 }
 
-/*Estilos para los enlaces del menú*/
-.navegador li a {
+/* Crea una lista horizontal con el margen */
+li {
+	display:inline-block;
+}
+
+/* Estilos para los enlaces del menú */
+li a {
 	display:block;
 	min-width:120px;
 	height: 40px;
@@ -36,54 +40,54 @@
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 15px;
 	font-weight: 400;
-	color: #001400;
+	color: #140A00;
 	text-decoration: none;
 	-webkit-transition: all 0.2s ease-in-out 0s;
 	transition: all 0.2s ease-in-out 0s;
 }
 
-/*Estilo Hover para los enlaces principales*/
-.navegador li:hover a {
+/* Estilo Hover para los enlaces principales */
+li:hover a {
 	color: #4D944D;
 }
 
-/*Estilo hover para los botones secundarios*/
-.navegador li:hover ul a {
+/* Estilo hover para los botones secundarios */
+li:hover ul a {
 	color: #001400;
 	height: 30px;
 	line-height: 30px;
 }
 
-/*Hover para los enlaces secundarios*/
-.navegador li:hover ul a:hover {
+/* Hover para los enlaces secundarios */
+li:hover ul a:hover {
 	color: #4D944D;
 }
 
-/*Esconder los botones secundarios*/
-.navegador li ul {
+/* Esconder los botones secundarios */
+li ul {
    display: none;
 }
 
-/*Hacer los botones extensibles que se muestren en vertical*/
-.navegador li ul li {
+/* Hacer los botones extensibles que se muestren en vertical */
+li ul li {
     width: 10%;
 	display: block;
 	float: none;
 }
 
-/*Evitar que el texto se monte*/
-.navegador li ul li a {
+/* Evitar que el texto se monte */
+li ul li a {
 	width: auto;
 	min-width: 80px;
 	padding: 0 20px;
 }
 
-/*Mostrar los enlaces extensibles*/
-.navegador ul li a:hover + .hidden, .hidden:hover {
+/* Mostrar los enlaces extensibles */
+ul li a:hover + .hidden, .hidden:hover {
 	display: block;
 }
 
-/*Estilo para el botón 'muestra menú'*/
+/* Estilo para el botón 'muestra menú' */
 .show-menu {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
@@ -94,22 +98,33 @@
 	display: none;
 }
 
-/*Ocultar checkbox*/
+/* Ocultar checkbox */
 input[type=checkbox]{
     display: none;
 }
 
-/*Show menu when invisible checkbox is checked*/
+/* Muestra el menú cuando el checkbox invisble esta seleccionado */
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
-/*************************************************/
 
-/*Estilos para que el menú sea Responsive*/
+/**************/
+/* Responsive */
+/**************/
+
 @media screen and (max-width : 600px){
+    body{
+    	
+    }
     
- 
-
+    .presentacion {
+    	margin-top: 10%;
+    }
+    
+    .text-presen {
+    	margin-top: 10%;
+    }
+    
     .navegador {
     	width: 100%;
     	margin-left: 0;
@@ -124,29 +139,30 @@ input[type=checkbox]:checked ~ #menu{
     	position: absolute;
     }
 
-	/*Hacer que los botones aparezcan en línea*/
+	/* Hacer que los botones aparezcan en línea */
 	ul {
 		position: static;
 		display: none;
 	}
-	/*Crea un espaciado vertical*/
-	li {
-		margin-bottom: 1px;
-	}
-	/*Damos una anchura total a todos los elementos del menú*/
+	
+	/* Damos una anchura total a todos los elementos del menú */
 	ul li, li a {
 		width: 100%;
 	}
-	/*Muestra los enlaces de 'show menu'*/
-	.show-menu {
-		display:block;
+	
+	/* Crea un espaciado vertical */
+	li {
+		margin-bottom: 1px;
 	}
+	
 	li a {
 		background-color: #2f3036;
+		color: #CCCCCC;
 	}
+	
 	li:hover a {
 		background-color: #f3f3f3;
-		color: #FFFFD1;
+		color: #4D944D;
 	}
 	
     .escondido{
@@ -155,6 +171,10 @@ input[type=checkbox]:checked ~ #menu{
     .visible{
         display:none;
     }
-
-
+    
+    /* Muestra los enlaces de 'show menu' */
+	.show-menu {
+		display:block;
+		background-color: #4D944D;
+	}
 }
